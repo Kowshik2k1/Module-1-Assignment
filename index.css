@@ -14,8 +14,26 @@ img {
     height: 400px; 
 }
 
+.carousel-image {
+    object-fit: cover;
+}
+
 body {
     position: relative;
+}
+
+.list-group {
+    top: 0%;
+    z-index: 1;
+}
+
+.list-group-item {
+    max-width: max-content;
+    border-radius: 0 !important;
+}
+
+.inner-scrollspy {
+    background-color: #fafafa;
 }
 
 .main-section {
@@ -62,4 +80,38 @@ body {
     @media (min-width: 992px) {
         height: 200px;
     }
+  }
+
+  .navbar-toggler {
+    border: 0;
+    outline: 0;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    background: url('./images/close-icon.svg') no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    background: url('./images/hamburger.svg') no-repeat;
+    background-size: 30px;
+  }
+
+  .accordion-item {
+    margin: 0 15px 20px;
+  }
+
+  .carousel-item {
+    position: relative;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 10%;
   }
