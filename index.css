@@ -1,0 +1,65 @@
+.site-container {
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-div {
+    max-width: 1216px;
+    height: 400px;
+}
+
+body {
+    position: relative;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+}
+
+.main-section .list-group {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+    @media (min-width: 992px) {
+        max-width: 200px;
+    }
+}
+
+.main-section .scrollspy-example {
+    padding: 0 15px;
+
+    @media (min-width: 992px) {
+        max-width: calc(100% - 230px);
+    }   
+}
+
+.menu-card img {
+    height: auto;
+    object-fit: cover;
+
+    @media (min-width: 548px) {
+        height: 300px;
+    }
+
+    @media (min-width: 768px) {
+        height: 250px;
+    }
+
+    @media (min-width: 992px) {
+        height: 200px;
+    }
+  }

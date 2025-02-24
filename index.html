@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>Food Delivery Website</title>
+</head>
+
+<body class="m-0">
+  <header class="bg-light">
+    <nav class="navbar navbar-expand-lg site-container navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold p-2" href="/index.html">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse justify-content-end navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link" href="#menu">Menu</a>
+            <a class="nav-link" href="#order">Order</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="carousel-section site-container">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-div bg-primary d-block"></div>
+            <div class="carousel-caption d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-div bg-secondary d-block"></div>
+            <div class="carousel-caption d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-div bg-info d-block"></div>
+            <div class="carousel-caption d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="main-section site-container mt-2">
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+      </div>
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0"
+        class="scrollspy-example p-lg-0 position-relative" tabindex="0">
+        <h4 id="list-item-1">Item 1</h4>
+        <p>.This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.</p>
+        <h4 id="list-item-2">Item 2</h4>
+        <p>.This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.</p>
+        <h4 id="list-item-3">Item 3</h4>
+        <p>.This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.</p>
+        <h4 id="list-item-4">Item 4</h4>
+        <p>.This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.</p>
+      </div>
+    </section>
+    <section class="menu site-container" id="menu">
+      <h2 class="text-center mb-4">Our Menu</h2>
+      <div class="row m-0 g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card menu-card">
+            <img src="./images/idly.jpg" class="card-img-top" alt="Idly">
+            <div class="card-body text-center">
+              <h5 class="card-title">Soft Idli</h5>
+              <p class="card-text">Steamed Idli's served with sambar & chutney.</p>
+              <h6 class="text-primary">₹50</h6>
+              <button class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card menu-card">
+            <img src="./images/dosa.jpeg" class="card-img-top" alt="Dosa">
+            <div class="card-body text-center">
+              <h5 class="card-title">Crispy Dosa</h5>
+              <p class="card-text">Thin & crispy dosa with coconut chutney.</p>
+              <h6 class="text-primary">₹70</h6>
+              <button class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card menu-card">
+            <img src="./images/pongal.jpeg" class="card-img-top" alt="Pongal">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pongal</h5>
+              <p class="card-text">Comforting rice & moong dal dish with ghee.</p>
+              <h6 class="text-primary">₹60</h6>
+              <button class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card menu-card">
+            <img src="./images/upma.jpeg" class="card-img-top" alt="Upma">
+            <div class="card-body text-center">
+              <h5 class="card-title">Rava Upma</h5>
+              <p class="card-text">Healthy and tasty semolina upma.</p>
+              <h6 class="text-primary">₹55</h6>
+              <button class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card menu-card">
+            <img src="./images/biryani.jpeg" class="card-img-top" alt="Biryani">
+            <div class="card-body text-center">
+              <h5 class="card-title">Hyderabadi Biryani</h5>
+              <p class="card-text">Authentic dum biryani with rich spices.</p>
+              <h6 class="text-primary">₹250</h6>
+              <button class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card menu-card">
+            <img src="./images/donne-biryani.jpeg" class="card-img-top" alt="Donne Biryani">
+            <div class="card-body text-center">
+              <h5 class="card-title">Donne Biryani</h5>
+              <p class="card-text">Flavorful Bangalore-style biryani.</p>
+              <h6 class="text-primary">₹230</h6>
+              <button class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card menu-card">
+            <img src="./images/curd-rice.jpeg" class="card-img-top" alt="Curd Rice">
+            <div class="card-body text-center">
+              <h5 class="card-title">Curd Rice</h5>
+              <p class="card-text">Cool and refreshing curd rice.</p>
+              <h6 class="text-primary">₹50</h6>
+              <button class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card menu-card">
+            <img src="./images/coffee.jpg" class="card-img-top" alt="Filter Coffee">
+            <div class="card-body text-center">
+              <h5 class="card-title">Filter Coffee</h5>
+              <p class="card-text">Authentic South Indian filter coffee.</p>
+              <h6 class="text-primary">₹40</h6>
+              <button class="btn btn-warning">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="order border my-5 bg-light" id="order">
+      <form class="p-4 site-container">
+        <!-- Customer Name -->
+        <div class="mb-3">
+          <label for="customerName" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="customerName" placeholder="Enter your name" required>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <!-- Address -->
+        <div class="mb-3">
+          <label for="address" class="form-label">Delivery Address</label>
+          <textarea class="form-control" id="address" rows="3" placeholder="Enter your delivery address"
+            required></textarea>
+        </div>
+
+        <!-- Select Dish -->
+        <div class="mb-3">
+          <label for="dishSelect" class="form-label">Select Dish</label>
+          <select class="form-select" id="dishSelect" required>
+            <option value="" selected disabled>Choose an item</option>
+            <option value="idli">Soft Idli - ₹50</option>
+            <option value="dosa">Crispy Dosa - ₹70</option>
+            <option value="pongal">Ven Pongal - ₹60</option>
+            <option value="upma">Rava Upma - ₹55</option>
+            <option value="hyderabadi_biryani">Hyderabadi Biryani - ₹250</option>
+            <option value="ambur_biryani">Ambur Biryani - ₹220</option>
+            <option value="donne_biryani">Donne Biryani - ₹230</option>
+            <option value="curd_rice">Curd Rice - ₹50</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-success px-4" data-bs-toggle="modal" data-bs-target="#successmsg">Place
+            Order</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="successmsg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p class="p-3 m-0 bg-dark text-white fw-bold d-flex justify-content-center">&copy; Copyright@2025</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
